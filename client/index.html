@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>getProfiles</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form class="main" onsubmit = "processFollowers(event)">
+      <input type="text" id="sheetUrl" placeholder="Paste Google Sheet URL" required />
+      <textarea id="inputArea" placeholder="Paste here..." required></textarea>
+      <button type="submit">Extract Followers</button>
+    </form>
+
+    <div id="loader" style="display: none; margin-top: 10px; color: rgb(44, 159, 225);">Sending data to Google Sheet...</div>
+    <div id="err" style="display: none; margin-top: 10px; color: red;">Some error occured, please try again...</div>
+
+    <!-- <div id="op" style="display: none;">
+        <h2>Extracted Followers:</h2>
+        <pre id="outputArea" >[]</pre>
+    </div> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
