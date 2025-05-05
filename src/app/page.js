@@ -38,7 +38,7 @@ export default function Home() {
       setError(false);
       setLoading(true);
 
-      const response = await fetch('http://localhost:5000/add-row', {
+      const response = await fetch('/api/add-row', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ followers, sheetUrl }),
